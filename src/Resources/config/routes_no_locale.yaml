@@ -1,0 +1,10 @@
+# By default Sylius uses urls like https://example.com/en_US/, but Sylius also offers the option to disable
+# localized URLs (see https://docs.sylius.com/en/latest/cookbook/shop/disabling-localised-urls.html).
+# To accommodate this in your plugin, provide a routes file for non localized stores and tell this in the README.md
+
+zambodaniel_sylius_foxpost_shop:
+    resource: "@ZamboDanielSyliusFoxpostPlugin/Resources/config/routes/shop.yaml"
+
+zambodaniel_sylius_foxpost_admin:
+    resource: "@ZamboDanielSyliusFoxpostPlugin/Resources/config/routes/admin.yaml"
+    prefix: /admin
